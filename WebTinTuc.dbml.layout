@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="WebTinTuc">
+  <DataContextMoniker Name="/WebTinTucDataContext" />
+  <nestedChildShapes>
+    <classShape Id="12f79b2d-0003-4fe6-a602-4f281fedf3fe" absoluteBounds="0.75, 0.75, 2, 2.3478011067708335">
+      <DataClassMoniker Name="/WebTinTucDataContext/tblUser" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4f8c252e-8d71-4a99-8f43-7a12f1db88a8" absoluteBounds="0.765, 1.21, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="81db1862-40c5-4809-9e6d-1aeb7d9457ca" absoluteBounds="3.75, 0.75, 2, 1.1939925130208333">
+      <DataClassMoniker Name="/WebTinTucDataContext/tblCategory" />
+      <nestedChildShapes>
+        <elementListCompartment Id="11574fa1-578f-4539-8448-e313ca442804" absoluteBounds="3.765, 1.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d027a2c8-cb0b-4713-9a2c-47c6ac2e4e0b" absoluteBounds="3.75, 2.75, 2, 2.3478011067708335">
+      <DataClassMoniker Name="/WebTinTucDataContext/tblNew" />
+      <nestedChildShapes>
+        <elementListCompartment Id="313a26b2-3b5e-4f26-8f90-621525affdfe" absoluteBounds="3.765, 3.21, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

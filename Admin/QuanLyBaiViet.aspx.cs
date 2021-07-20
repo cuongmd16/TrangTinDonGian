@@ -15,14 +15,14 @@ namespace TrangTinTucDonGian.Admin
         {
             if (!IsPostBack)
             {
-                showGrid("");
+                /*showGrid("");*/
                 GetCode();
                
             }
         }
         void GetCode()
         {
-            string news_ID = "0";
+           /* string news_ID = "0";
             string author_ID = "0";
             string category_ID = "0";
             string str = "SELECT [title],[picture],[date]FROM[dbo].[tblNews] WHERE news_ID= '" + news_ID + "',author_ID = '" + author_ID + "',category_ID'"+ category_ID + "'";
@@ -36,7 +36,7 @@ namespace TrangTinTucDonGian.Admin
                 txtTitle.Text = title;
                 txtImage.Text = picture;
                 txtDate.Text = date;
-            }
+            }*/
         }
         private void loadDataByNewID(string s)
         {
@@ -71,27 +71,27 @@ namespace TrangTinTucDonGian.Admin
             ddlAuthor.DataSource = new DataProvider().excuteQuery(str);
             ddlAuthor.DataBind();*/
         }
-        private void showGrid(string str)
+     /*   private void showGrid(string str)
         {
             gvNews.DataSource = (new DataProvider()).excuteQuery("select * from tblNews" +str);
             gvNews.DataBind();
-        }
+        }*/
         SqlConnection cnn;
         protected void btnInsert_Click(object sender, EventArgs e)
         {
          /*   string sqlInsert = "INSERT INTO tblNews Value title='" + + "',picture='" + txtImage.Text + "'," +
-                 "date='" +  + "'where news_ID ='"+  + "',author_ID ='" +  + "'";*/
-            string strInsert = "INSERT INTO tblNews (category_ID,author_ID,title,body,picture,date) Values" +
-                "("+ ddlCategory.SelectedValue.ToString() + ","+ ddlAuthor.SelectedValue.ToString() + ",'"+ txtTitle.Text + "','','','"+ txtDate.Text + "') ";
+            *//*     "date='" +  + "'where news_ID ='"+  + "',author_ID ='" +  + "'";*//*
+            string strInsert = "INSERT INTO tblNews (category_ID,title,body,picture,date) Values" +
+                "("+ ddlCategory.SelectedValue.ToString() + ",'"+ txtTitle.Text + "','','','"+ txtDate.Text + "') ";
             if ((new DataProvider()).excuteNonQuery(strInsert))
             {
                 Response.Write("<script>alert('INSERT successful!')</script>");
-                showGrid("");
+                
             }
             else
             {
                 Response.Write("<script>alert('INSERT fail!')</script>");
-            }
+            }*/
         }
 
 /*        protected void btnUpdate_Click(object sender, EventArgs e)
@@ -130,10 +130,10 @@ namespace TrangTinTucDonGian.Admin
 
         protected void gvNews_SelectedIndexChanged(object sender, EventArgs e)
         {
-            showGrid("");
+          /*  showGrid("");*//*
             getListNewID();
             getListCategoryID();
-            getListAuthorID();
+            getListAuthorID();*/
         }
 
         protected void ddlNewsID_SelectedIndexChanged(object sender, EventArgs e)

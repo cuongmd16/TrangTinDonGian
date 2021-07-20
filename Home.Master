@@ -52,7 +52,6 @@
                         {%>
                     <a>Hi, <asp:Label ID="lblUsername" runat="server" Font-Italic="True"></asp:Label>! </a> 
                     <a href="Profile.aspx">Profile</a>
-                    <a href="AddNews.aspx">Add news</a>
                     <a href="Logout.aspx">Thoát</a>
                     <%}
                     %>

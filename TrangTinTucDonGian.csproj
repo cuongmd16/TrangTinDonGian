@@ -53,7 +53,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="AddNews.aspx" />
+    <Content Include="User\AddNews.aspx" />
     <Content Include="Admin\AdminHome.aspx" />
     <Content Include="Admin\QuanLyBaiViet.aspx" />
     <Content Include="Admin\QuanlyUser.aspx" />
@@ -87,11 +87,11 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AddNews.aspx.cs">
+    <Compile Include="User\AddNews.aspx.cs">
       <DependentUpon>AddNews.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="AddNews.aspx.designer.cs">
+    <Compile Include="User\AddNews.aspx.designer.cs">
       <DependentUpon>AddNews.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin\AdminHome.aspx.cs">
